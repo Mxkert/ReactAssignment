@@ -2,37 +2,54 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Breweries */
+.breweries {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.breweries .brewery {
+  position: relative;
+  width: 25%;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  padding: 70px 30px 30px;
+  text-align: left;
+}
+
+.breweries .brewery h3 {
+  margin: 0;
+}
+
+.breweries .brewery button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  background: transparent;
+  border: 1px solid #eee;
+  box-shadow: none;
+  padding: 10px 15px;
+}
+
+.breweries .brewery button:hover {
+  cursor: pointer;
+}
+
+/* Nav */
+.nav {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #eee;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  border: 1px solid #999;
+  padding: 10px 15px;
 }
